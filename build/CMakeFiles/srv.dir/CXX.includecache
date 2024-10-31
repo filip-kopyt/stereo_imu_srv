@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jetson/stereo_imu_srv/src/main.cpp
+arpa/inet.h
+-
+errno.h
+-
+string.h
+-
+sys/socket.h
+-
+unistd.h
+-
+chrono
+-
+fstream
+-
+iostream
+-
+thread
+-
+
