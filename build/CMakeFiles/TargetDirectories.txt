@@ -1,3 +1,0 @@
-/home/jetson/stereo_imu_srv/build/CMakeFiles/rebuild_cache.dir
-/home/jetson/stereo_imu_srv/build/CMakeFiles/srv.dir
-/home/jetson/stereo_imu_srv/build/CMakeFiles/edit_cache.dir

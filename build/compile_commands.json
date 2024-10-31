@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/jetson/stereo_imu_srv/build",
-  "command": "/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/srv.dir/src/main.cpp.o -c /home/jetson/stereo_imu_srv/src/main.cpp",
-  "file": "/home/jetson/stereo_imu_srv/src/main.cpp"
-}
-]
