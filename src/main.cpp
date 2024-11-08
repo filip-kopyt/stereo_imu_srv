@@ -10,18 +10,25 @@
 #include <fstream>
 #include <iostream>
 #include <thread>
+#include "StereoCam.h"
 
 using namespace std::string_literals;
 
 static const uint16_t mg_port = 12000;
 static const std::string mg_path = "/dev/stereo_imu"s;
-// static const std::string mg_path = "f"s;
 static bool mg_stop = false;
 
 void signal_handler(int) { mg_stop = true; }
 
 int main(int argc, char* argv[]) {
     signal(SIGINT, signal_handler);
+
+    StereoCam stereoCam;
+    while (!mg_stop) {
+        stereoCam.process();
+    }
+
+    return 0;
 
     int srvFd = socket(AF_INET, SOCK_STREAM, 0);
     if (0 > srvFd) {
